@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "343423689284",
+    "project_id": "canciones-con-historia",
+    "storage_bucket": "canciones-con-historia.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343423689284:android:049dfbbbdc3477f2e5d211",
+        "android_client_info": {
+          "package_name": "com.example.mi_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "343423689284-phrd31qbhid8728qs2rc9nm62a9agq1c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mi_app",
+            "certificate_hash": "55299e73c98909f5cfac371f39b4a2ce116982d3"
+          }
+        },
+        {
+          "client_id": "343423689284-9l2h0d1rc365bqs1fc03a8iv5e4gpl00.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkBBXiyaBTm5crd4GsgVd_utIeWXrNurY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "343423689284-9l2h0d1rc365bqs1fc03a8iv5e4gpl00.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

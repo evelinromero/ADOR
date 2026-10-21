@@ -1,0 +1,23 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Debe coincidir con lib/config.dart
+    function isAdmin() {
+      return request.auth != null &&
+        request.auth.token.email in ['alexalvarado0115@gmail.com',
+                                   'romeroeve0905@gmail.com',
+                                   'alexis.bad.trejo@gmail.com'];
+    }
+
+    // Canciones: cualquier usuario con sesión las lee; solo el admin escribe.
+    match /songs/{songId} {
+      allow read: if request.auth != null;
+      allow write: if isAdmin();
+    }
+
+    // Cada usuario solo puede leer/escribir su propio documento (favoritos).
+    match /users/{uid} {
+      allow read, write: if request.auth != null && request.auth.uid == uid;
+    }
+  }
+}
